@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25103EEE2A8756FF00C0D87C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25103EED2A8756FF00C0D87C /* QuartzCore.framework */; };
+		25103F022A87DDBE00C0D87C /* resource in Resources */ = {isa = PBXBuildFile; fileRef = 25103F012A87DDBE00C0D87C /* resource */; };
+		25103F072A87DFB500C0D87C /* RootTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25103F062A87DFB500C0D87C /* RootTableViewController.m */; };
 		25BE1B632A868EEC0025A005 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BE1B622A868EEC0025A005 /* AppDelegate.m */; };
 		25BE1B662A868EEC0025A005 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BE1B652A868EEC0025A005 /* SceneDelegate.m */; };
-		25BE1B692A868EEC0025A005 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BE1B682A868EEC0025A005 /* ViewController.m */; };
+		25BE1B692A868EEC0025A005 /* GifViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25BE1B682A868EEC0025A005 /* GifViewController.m */; };
 		25BE1B6C2A868EEC0025A005 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25BE1B6A2A868EEC0025A005 /* Main.storyboard */; };
 		25BE1B6E2A868EED0025A005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25BE1B6D2A868EED0025A005 /* Assets.xcassets */; };
 		25BE1B712A868EED0025A005 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25BE1B6F2A868EED0025A005 /* LaunchScreen.storyboard */; };
@@ -36,13 +39,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25103EED2A8756FF00C0D87C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		25103EF52A875C3200C0D87C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		25103EFF2A87DDA700C0D87C /* a.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = a.gif; sourceTree = "<group>"; };
+		25103F012A87DDBE00C0D87C /* resource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = resource; sourceTree = "<group>"; };
+		25103F052A87DFB500C0D87C /* RootTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootTableViewController.h; sourceTree = "<group>"; };
+		25103F062A87DFB500C0D87C /* RootTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootTableViewController.m; sourceTree = "<group>"; };
 		25BE1B5E2A868EEC0025A005 /* shadow_ios_oc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shadow_ios_oc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25BE1B612A868EEC0025A005 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		25BE1B622A868EEC0025A005 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		25BE1B642A868EEC0025A005 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		25BE1B652A868EEC0025A005 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		25BE1B672A868EEC0025A005 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		25BE1B682A868EEC0025A005 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		25BE1B672A868EEC0025A005 /* GifViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GifViewController.h; sourceTree = "<group>"; };
+		25BE1B682A868EEC0025A005 /* GifViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GifViewController.m; sourceTree = "<group>"; };
 		25BE1B6B2A868EEC0025A005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		25BE1B6D2A868EED0025A005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25BE1B702A868EED0025A005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25103EEE2A8756FF00C0D87C /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,13 +91,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25103EEC2A8756FF00C0D87C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25103EED2A8756FF00C0D87C /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		25103EFE2A87DDA700C0D87C /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				25103F042A87DDD400C0D87C /* img */,
+				25103F032A87DDC800C0D87C /* gif */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		25103F032A87DDC800C0D87C /* gif */ = {
+			isa = PBXGroup;
+			children = (
+				25103EFF2A87DDA700C0D87C /* a.gif */,
+			);
+			path = gif;
+			sourceTree = "<group>";
+		};
+		25103F042A87DDD400C0D87C /* img */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
+		25103F0D2A87E6CF00C0D87C /* pages */ = {
+			isa = PBXGroup;
+			children = (
+				25103F0E2A87E6F500C0D87C /* gif */,
+			);
+			path = pages;
+			sourceTree = "<group>";
+		};
+		25103F0E2A87E6F500C0D87C /* gif */ = {
+			isa = PBXGroup;
+			children = (
+				25BE1B672A868EEC0025A005 /* GifViewController.h */,
+				25BE1B682A868EEC0025A005 /* GifViewController.m */,
+			);
+			path = gif;
+			sourceTree = "<group>";
+		};
 		25BE1B552A868EEC0025A005 = {
 			isa = PBXGroup;
 			children = (
+				25103EFE2A87DDA700C0D87C /* resource */,
+				25103F012A87DDBE00C0D87C /* resource */,
+				25103EF52A875C3200C0D87C /* README.md */,
 				25BE1B602A868EEC0025A005 /* shadow_ios_oc */,
 				25BE1B7C2A868EED0025A005 /* shadow_ios_ocTests */,
 				25BE1B872A868EED0025A005 /* shadow_ios_ocUITests */,
 				25BE1B5F2A868EEC0025A005 /* Products */,
+				25103EEC2A8756FF00C0D87C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,17 +167,18 @@
 		25BE1B602A868EEC0025A005 /* shadow_ios_oc */ = {
 			isa = PBXGroup;
 			children = (
+				25103F0D2A87E6CF00C0D87C /* pages */,
 				25BE1B612A868EEC0025A005 /* AppDelegate.h */,
 				25BE1B622A868EEC0025A005 /* AppDelegate.m */,
 				25BE1B642A868EEC0025A005 /* SceneDelegate.h */,
 				25BE1B652A868EEC0025A005 /* SceneDelegate.m */,
-				25BE1B672A868EEC0025A005 /* ViewController.h */,
-				25BE1B682A868EEC0025A005 /* ViewController.m */,
 				25BE1B6A2A868EEC0025A005 /* Main.storyboard */,
 				25BE1B6D2A868EED0025A005 /* Assets.xcassets */,
 				25BE1B6F2A868EED0025A005 /* LaunchScreen.storyboard */,
 				25BE1B722A868EED0025A005 /* Info.plist */,
 				25BE1B732A868EED0025A005 /* main.m */,
+				25103F052A87DFB500C0D87C /* RootTableViewController.h */,
+				25103F062A87DFB500C0D87C /* RootTableViewController.m */,
 			);
 			path = shadow_ios_oc;
 			sourceTree = "<group>";
@@ -239,6 +303,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25103F022A87DDBE00C0D87C /* resource in Resources */,
 				25BE1B712A868EED0025A005 /* LaunchScreen.storyboard in Resources */,
 				25BE1B6E2A868EED0025A005 /* Assets.xcassets in Resources */,
 				25BE1B6C2A868EEC0025A005 /* Main.storyboard in Resources */,
@@ -266,7 +331,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25BE1B692A868EEC0025A005 /* ViewController.m in Sources */,
+				25103F072A87DFB500C0D87C /* RootTableViewController.m in Sources */,
+				25BE1B692A868EEC0025A005 /* GifViewController.m in Sources */,
 				25BE1B632A868EEC0025A005 /* AppDelegate.m in Sources */,
 				25BE1B742A868EED0025A005 /* main.m in Sources */,
 				25BE1B662A868EEC0025A005 /* SceneDelegate.m in Sources */,
