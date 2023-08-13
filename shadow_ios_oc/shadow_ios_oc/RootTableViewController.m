@@ -8,6 +8,8 @@
 #import "RootTableViewController.h"
 
 #import "GifViewController.h"
+#import "CircularArcViewController.h"
+#import "CircleArcVC2.h"
 
 #define CellIndentifier @"CellIndentifier"
 
@@ -23,7 +25,13 @@
     [super viewDidLoad];
     // data
     GifViewController *gifVC = [[GifViewController alloc] init];
-    self.children = @[gifVC];
+    CircularArcViewController *arcVC = [[CircularArcViewController alloc] init];
+    CircleArcVC2 *arcVC2 = [[CircleArcVC2 alloc] init];
+    self.children = @[
+        @{@"name": @"gifVC",@"controller": gifVC},
+        @{@"name": @"arcVC",@"controller": arcVC},
+        @{@"name": @"arcVC2",@"controller": arcVC2},
+    ];
     
     // cell register
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:CellIndentifier];
@@ -45,13 +53,13 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIndentifier forIndexPath:indexPath];
     
-    cell.textLabel.text = @"gifVC";
+    cell.textLabel.text = self.children[indexPath.row][@"name"];
     
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [self.navigationController pushViewController:self.children[indexPath.row] animated:true];
+    [self.navigationController pushViewController:self.children[indexPath.row][@"controller"] animated:true];
 }
 
 /*
