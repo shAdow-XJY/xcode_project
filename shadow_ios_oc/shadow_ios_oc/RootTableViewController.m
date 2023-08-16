@@ -10,6 +10,7 @@
 #import "GifViewController.h"
 #import "CircularArcViewController.h"
 #import "CircleArcVC2.h"
+#import "TableVC.h"
 
 #define CellIndentifier @"CellIndentifier"
 
@@ -27,10 +28,12 @@
     GifViewController *gifVC = [[GifViewController alloc] init];
     CircularArcViewController *arcVC = [[CircularArcViewController alloc] init];
     CircleArcVC2 *arcVC2 = [[CircleArcVC2 alloc] init];
+    TableVC *tableVC = [[TableVC alloc] init];
     self.children = @[
         @{@"name": @"gifVC",@"controller": gifVC},
         @{@"name": @"arcVC",@"controller": arcVC},
         @{@"name": @"arcVC2",@"controller": arcVC2},
+        @{@"name": @"tableVC",@"controller": tableVC},
     ];
     
     // cell register
